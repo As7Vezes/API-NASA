@@ -136,6 +136,12 @@ button{
 }
 
 @media (max-width: 950px) {
+
+    #container-image {
+        width: fit-content;
+        height: fit-content;
+    }
+
     #container-image-label {
         width: 100%;
         border-top: 10px;
