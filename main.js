@@ -26,7 +26,7 @@ class PictureDay {
     if (inputaData) {
       try {
         const data = await this.apiFetch(inputaData);
-        this.containerImage.innerHTML = `<img src=${data.url}>`;
+        this.containerImage.innerHTML = `<img src=${data.url} class='img-api'>`;
         this.descriptionConteiner.style.backgroundImage = `url(${data.url})`;
         this.body.style.backgroundImage = `url(${data.url})`;
         this.description.innerText = data.explanation;

@@ -12,6 +12,7 @@ body {
     background-size: cover;
 }
 
+
 #title-page {
     width: 100%;
     padding: 30px;
@@ -42,8 +43,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative; 
+    overflow: hidden;
     
-
     padding: 10px;
 
     width: 900px;
@@ -55,8 +57,9 @@ body {
     border-radius: 10px;
 }
 
-#container-image img {
+.img-api {
     width: 100%;
+    height: 100%;
 }
 
 #container-image-label {
