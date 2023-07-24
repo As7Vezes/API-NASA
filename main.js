@@ -26,7 +26,7 @@ class PictureDay {
     if (inputaData) {
       try {
         const data = await this.apiFetch(inputaData);
-        this.containerImage.style.backgroundImage = `url(${data.url})`;
+        this.containerImage.innerHTML = `<img src=${data.url}>`;
         this.descriptionConteiner.style.backgroundImage = `url(${data.url})`;
         this.body.style.backgroundImage = `url(${data.url})`;
         this.description.innerText = data.explanation;
@@ -48,7 +48,7 @@ class PictureDay {
       const day = String(today.getDate()).padStart(2, "0");
       currentDate = `${year}-${month}-${day}`;
       const data = await this.apiFetch(currentDate);
-      this.containerImage.style.backgroundImage = `url(${data.url})`;
+      this.containerImage.innerHTML = `<img src=${data.url}>`;
       this.descriptionConteiner.style.backgroundImage = `url(${data.url})`;
       this.body.style.backgroundImage = `url(${data.url})`;
       this.description.innerText = data.explanation;

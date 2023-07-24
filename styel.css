@@ -55,6 +55,10 @@ body {
     border-radius: 10px;
 }
 
+#container-image img {
+    width: 100%;
+}
+
 #container-image-label {
     width: fit-content;
     height: 50px;
