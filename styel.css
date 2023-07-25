@@ -102,6 +102,8 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     background-image: url('espaço.jpg');
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
     border-radius: 10px;
 
@@ -194,4 +196,5 @@ label {
         overflow: auto;
         font-size: 16px;
     }
+
 }
